@@ -1,0 +1,86 @@
+/* Default style for screens wider than 800 pixels */
+.navbar {
+    background-color: #03787C;
+}
+
+.image-container {
+    text-align: center;
+}
+
+.image-container img {
+    max-height: 100px;
+    max-width: 100px;
+    margin: 10px;
+}
+
+footer {
+    background-color: #03787c;
+    position: flex;
+    width: 100%;
+    bottom: 0;
+    margin-top: 50px;
+}
+
+nav .icon {
+    padding: 0 20px 0 0;
+    float: left;
+}
+
+nav .icon img {
+    height: 32px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #f1f1f1;
+    text-align: center;
+    transition: 0.3s;
+    border: 20px;
+    margin: 50px;
+}
+
+.card:hover {
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.4);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-columns {
+    margin-bottom: 20px;
+    border: 20px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 25px;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 20px;
+    font-size: small;
+}
+
+/* Style for screens between 480 and 800 pixels wide */
+@media (max-width: 800px) and (min-width: 480px) {
+    .card {
+        margin: 25px;
+    }
+
+    h1 {
+        font-size: medium;
+    }
+}
+
+/* Style for screens smaller than 480 pixels wide */
+@media (max-width: 480px) {
+    .card {
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: large;
+    }
+}
+
