@@ -1,4 +1,4 @@
-/* Default style for screens wider than 800 pixels */
+/*Tela padrão*/
 .navbar {
     background-color: #03787C;
 }
@@ -19,6 +19,7 @@ footer {
     width: 100%;
     bottom: 0;
     margin-top: 50px;
+    display: flex;
 }
 
 nav .icon {
@@ -62,5 +63,41 @@ h1 {
     font-size: small;
 }
 
+/*CSS para telas entre 480 e 800 pixels*/
+@media (max-width: 800px) and (min-width: 480px) {
+    .card {
+        margin: 25px;
+    }
 
+    h1 {
+        font-size: medium;
+    }
 
+    .card-columns {
+        margin-bottom: 20px;
+        border: 20px;
+        margin: 20px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 25px;
+    }
+}
+
+/*CSS para telas com menos de 480 pixels*/
+@media (max-width: 480px) {
+    .card {
+        margin: 30px;
+    }
+
+    h1 {
+        font-size: large;
+    }
+
+    .card-columns {
+        display: inline;
+    }
+
+    .card-body {
+        padding: 0px;
+    }
+}
