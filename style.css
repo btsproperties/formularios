@@ -1,4 +1,4 @@
-/*Tela padrão*/
+/* Default style for screens wider than 800 pixels */
 .navbar {
     background-color: #03787C;
 }
@@ -13,7 +13,7 @@
     margin: 10px;
 }
 
-footer {
+footer { 
     background-color: #03787c;
     position: flex;
     width: 100%;
